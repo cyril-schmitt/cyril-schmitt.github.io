@@ -3,18 +3,22 @@
 
 <head>
     <title>Présentation de Noël</title>
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <!-- <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="main.css">
+
+
+
     <link rel="stylesheet" href="dist/reset.css">
     <link rel="stylesheet" href="dist/reveal.css">
     <link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
@@ -41,13 +45,21 @@
 
     <script src="dist/reveal.js"></script>
     <script>
+        // Reveal.initialize({
+        //     controls: true,
+        //     progress: false,
+        //     center: true,
+        //     hash: true,
+        //     touch: true,
+        // });
+
         Reveal.initialize({
-            controls: true,
-            progress: false,
             center: true,
-            hash: true,
-            touch: true,
-        });
+
+            transition: 'linear',
+            // transitionSpeed: 'slow',
+            // backgroundTransition: 'slide'
+        })
 
     </script>
 </body>

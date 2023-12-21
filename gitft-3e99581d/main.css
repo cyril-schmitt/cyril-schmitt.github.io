@@ -1,25 +1,16 @@
-.reveal .slides section {
-    background: transparent;
-}
-
-.christmas-theme {
+.reveal-viewport {
+    /* Workaround for some mobile browsers */
+    min-height: 100%;
     background: url('assets/fond-noel.png');
     background-size: cover;
 }
 
-.christmas-theme h1,
 .christmas-theme p {
     color: white;
     font-family: 'Great Vibes', cursive;
 }
 
-.judo-theme {
-    background: url('assets/fond-judo.png');
-    background-size: cover;
-}
-
-.judo-theme h2,
 .judo-theme p {
-    color: #004D40;
+    color: #599188;
     font-family: 'Roboto Condensed', sans-serif;
 }
