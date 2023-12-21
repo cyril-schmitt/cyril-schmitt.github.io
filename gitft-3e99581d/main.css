@@ -1,0 +1,25 @@
+.reveal .slides section {
+    background: transparent;
+}
+
+.christmas-theme {
+    background: url('assets/fond-noel.png');
+    background-size: cover;
+}
+
+.christmas-theme h1,
+.christmas-theme p {
+    color: white;
+    font-family: 'Great Vibes', cursive;
+}
+
+.judo-theme {
+    background: url('chemin/vers/image-judo.jpg');
+    background-size: cover;
+}
+
+.judo-theme h2,
+.judo-theme p {
+    color: #004D40;
+    font-family: 'Roboto Condensed', sans-serif;
+}
