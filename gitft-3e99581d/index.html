@@ -3,9 +3,14 @@
 
 <head>
     <title>Présentation de Noël</title>
-    <link rel="stylesheet" href="https://cyril-schmitt.github.io/gitft-3e99581d/css/reveal.css">
-    <link rel="stylesheet" href="https://cyril-schmitt.github.io/gitft-3e99581d/css/theme/black.css">
-    <!-- Vous pouvez changer le thème en modifiant "black.css" avec d'autres options disponibles -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme">
 </head>
 
 <body>
@@ -22,9 +27,23 @@
         </div>
     </div>
 
-    <script src="https://cyril-schmitt.github.io/gitft-3e99581d/js/reveal.js"></script>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
     <script>
-        Reveal.initialize();
+
+        // Also available as an ES module, see:
+        // https://revealjs.com/initialization/
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealZoom, RevealHighlight]
+        });
+
     </script>
 </body>
 
